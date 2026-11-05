@@ -1,0 +1,68 @@
+PUT THE APP'S WEB PAGES ONLINE (so Google lets you click "Publish app")
+=====================================================================
+
+Google won't publish the app until the Branding page has a home page and
+privacy policy link. This folder has three ready-made pages:
+  index.html    (home page)
+  privacy.html  (privacy policy)
+  terms.html    (terms of service)
+They're short and honest: a private family tool that only touches files
+it created in Drive. You'll put them online for free with GitHub Pages.
+
+
+STEP 0: QUICK CHECK FIRST (30 seconds)
+--------------------------------------
+On the Google Audience page, press F5 to reload. Google sometimes doesn't
+notice the Branding page was saved. If "Publish app" can now be clicked,
+click it, confirm, and skip everything below.
+
+
+STEP 1: MAKE A FREE GITHUB ACCOUNT (about 3 minutes)
+----------------------------------------------------
+1. Go to github.com and click "Sign up".
+2. Choose a username. It becomes part of the web address and is public,
+   so DON'T use your child's name. Something like "spo-family" is fine.
+   Below, YOURNAME means the username you picked.
+
+
+STEP 2: PUT THE PAGES ONLINE (about 3 minutes)
+----------------------------------------------
+1. On GitHub, click the "+" at the top right, then "New repository".
+2. Repository name, typed exactly:   YOURNAME.github.io
+   (for example:  spo-family.github.io)
+   Leave it Public. Tick "Add a README file". Click "Create repository".
+3. Click "Add file", then "Upload files".
+   Drag in index.html, privacy.html and terms.html from this folder.
+   (Don't upload this STEPS file.) Click "Commit changes".
+4. Wait 1-2 minutes, then open  https://YOURNAME.github.io  in a new tab.
+   You should see "School Paper Organizer".
+   If you get a 404 page, wait another minute and reload. If it's still
+   404: in the repository click "Settings", then "Pages", set "Source"
+   to "Deploy from a branch", choose "main" and "/ (root)", click Save,
+   and wait 2 minutes.
+
+
+STEP 3: FILL IN GOOGLE'S BRANDING PAGE (about 2 minutes)
+--------------------------------------------------------
+Go back to console.cloud.google.com, then Google Auth Platform, then Branding.
+1. Under "Authorized domains", click "Add domain" and type:
+       YOURNAME.github.io
+2. Fill in:
+   Application home page:          https://YOURNAME.github.io/
+   Application privacy policy link: https://YOURNAME.github.io/privacy.html
+   Application terms of service link: https://YOURNAME.github.io/terms.html
+3. Still leave the LOGO blank.
+4. Click Save at the bottom.
+
+
+STEP 4: PUBLISH
+---------------
+1. Click "Audience" on the left.
+2. Click "Publish app", then "Confirm".
+   The status should change to "In production".
+   If Google offers to "verify" the app, you don't need to. Skip it.
+3. Go back to the main setup file, Part 2, step 4 (create the Desktop
+   client and download the JSON).
+
+If Google shows an error at any step, take a screenshot
+(Win + Shift + S) and paste it to Claude with Ctrl + V.

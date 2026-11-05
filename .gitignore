@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+
+# Scanned school papers used for local testing — these can contain a
+# child's name, handwriting, and other personal information and must
+# never be pushed to a remote.
+*.pdf
+
+# Claude Code local session settings (machine-specific, not project config)
+.claude/settings.local.json
+
+# Ground-truth analysis JSON and spike data (contain child's schoolwork details)
+local/spike_data/
+local/spike_out/
+*-analysis.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local test-run output (scans, results, state, test emails)
+Local Test/
+
+# Personal or account-specific (keep off GitHub)
+apps-script/SeedData.gs
+apps-script/.clasp.json
+CLAUDE.md
+Setup steps*.txt
+*.zip
+.clasprc.json

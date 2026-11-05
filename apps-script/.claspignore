@@ -1,0 +1,7 @@
+# Push only the Apps Script sources and the manifest.
+# Everything is ignored first, then re-included, so stray files
+# (notes, backups, node_modules, test harnesses) never reach the project.
+**/**
+
+!*.gs
+!appsscript.json
